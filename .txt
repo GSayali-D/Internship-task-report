@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?><nmaprun args="nmap -sS -p 1-65535 -T4 -A -v nmap 192.168.1.36" profile_name="Intense scan, all TCP ports" scanner="nmap" start="1750676078" startstr="Mon Jun 23 16:24:38 2025" version="7.97" xmloutputversion="1.04"><scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"></scaninfo><verbose level="1"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.97 ( https://nmap.org ) at 2025-06-23 16:24 +0530
+NSE: Loaded 158 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 16:24
+Completed NSE at 16:24, 0.00s elapsed
+Initiating NSE at 16:24
+Completed NSE at 16:24, 0.00s elapsed
+Initiating NSE at 16:24
+Completed NSE at 16:24, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 16:24
+Completed Parallel DNS resolution of 1 host. at 16:24, 1.00s elapsed
+Initiating System DNS resolution of 1 host. at 16:24
+Completed System DNS resolution of 1 host. at 16:24, 2.36s elapsed
+Failed to resolve "nmap".
+Initiating Parallel DNS resolution of 1 host. at 16:24
+Completed Parallel DNS resolution of 1 host. at 16:24, 0.51s elapsed
+Initiating SYN Stealth Scan at 16:24
+Scanning 192.168.1.36 [65535 ports]
+Discovered open port 445/tcp on 192.168.1.36
+Discovered open port 139/tcp on 192.168.1.36
+Discovered open port 135/tcp on 192.168.1.36
+Discovered open port 49665/tcp on 192.168.1.36
+Discovered open port 49666/tcp on 192.168.1.36
+Discovered open port 49667/tcp on 192.168.1.36
+Discovered open port 49669/tcp on 192.168.1.36
+Discovered open port 49668/tcp on 192.168.1.36
+Discovered open port 5040/tcp on 192.168.1.36
+Discovered open port 49664/tcp on 192.168.1.36
+Completed SYN Stealth Scan at 16:24, 5.82s elapsed (65535 total ports)
+Initiating Service scan at 16:24
+Scanning 10 services on 192.168.1.36
+Service scan Timing: About 40.00% done; ETC: 16:27 (0:01:21 remaining)
+Completed Service scan at 16:26, 83.72s elapsed (10 services on 1 host)
+Initiating OS detection (try #1) against 192.168.1.36
+NSE: Script scanning 192.168.1.36.
+Initiating NSE at 16:26
+Completed NSE at 16:26, 14.30s elapsed
+Initiating NSE at 16:26
+Completed NSE at 16:26, 0.04s elapsed
+Initiating NSE at 16:26
+Completed NSE at 16:26, 0.01s elapsed
+Nmap scan report for 192.168.1.36
+Host is up (0.00090s latency).
+Not shown: 65524 closed tcp ports (reset)
+PORT      STATE    SERVICE       VERSION
+135/tcp   open     msrpc         Microsoft Windows RPC
+137/tcp   filtered netbios-ns
+139/tcp   open     netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open     microsoft-ds?
+5040/tcp  open     unknown
+49664/tcp open     msrpc         Microsoft Windows RPC
+49665/tcp open     msrpc         Microsoft Windows RPC
+49666/tcp open     msrpc         Microsoft Windows RPC
+49667/tcp open     msrpc         Microsoft Windows RPC
+49668/tcp open     msrpc         Microsoft Windows RPC
+49669/tcp open     msrpc         Microsoft Windows RPC
+Device type: general purpose
+Running: Microsoft Windows 10
+OS CPE: cpe:/o:microsoft:windows_10
+OS details: Microsoft Windows 10 1809 - 21H2
+Network Distance: 0 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2025-06-23T10:56:18
+|_  start_date: N/A
+
+NSE: Script Post-scanning.
+Initiating NSE at 16:26
+Completed NSE at 16:26, 0.00s elapsed
+Initiating NSE at 16:26
+Completed NSE at 16:26, 0.00s elapsed
+Initiating NSE at 16:26
+Completed NSE at 16:26, 0.00s elapsed
+Read data files from: C:\Program Files (x86)\Nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 110.08 seconds
+           Raw packets sent: 65552 (2.885MB) | Rcvd: 131120 (5.508MB)
+</output><host comment=""><status state="up"></status><address addr="192.168.1.36" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports><extraports count="65524" state="closed"></extraports><port portid="135" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="137" protocol="tcp"><state state="filtered" reason="no-response" reason_ttl="0"></state><service conf="3" method="table" name="netbios-ns"></service></port><port portid="139" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="netbios-ssn" product="Microsoft Windows netbios-ssn"></service></port><port portid="445" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="3" method="table" name="microsoft-ds"></service></port><port portid="5040" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service></service></port><port portid="49664" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="49665" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="49666" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="49667" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="49668" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="49669" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port></ports><os><portused state="open" proto="tcp" portid="135"></portused><portused state="closed" proto="tcp" portid="1"></portused><portused state="closed" proto="udp" portid="30360"></portused><osmatch name="Microsoft Windows 10 1809 - 21H2" accuracy="100" line="75084"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="10" accuracy="100"></osclass></osmatch></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="260" difficulty="Good luck!" values="269C43ED,EC07E175,3C59A2EA,50173379,DD7E40F3,4D274961"></tcpsequence><ipidsequence class="Incremental" values="72E5,72E7,72E9,72EB,72ED,72EF"></ipidsequence><tcptssequence class="none returned (unsupported)" values=""></tcptssequence></host><runstats><finished time="1750676187" timestr="Mon Jun 23 16:26:27 2025"></finished><hosts up="1" down="0" total="1"></hosts></runstats></nmaprun>
